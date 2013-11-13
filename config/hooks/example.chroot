@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Commands to run inside the chroot environment but before the final system
+# image is created.
+#
+# gem install a-thing-i-want-in-the-image
+#
+# mkdir -p /var/log/totally-necessary-log-files
+#
+# touch /etc/pointless-timestamps
+#

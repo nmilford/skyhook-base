@@ -1,0 +1,10 @@
+dialog
+ssh
+curl
+wget
+less
+ntp
+ipmitool
+dmidecode
+# so on
+# so forth

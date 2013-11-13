@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# To add a custom mirror for local repositories, add this line:
+# --mirror-bootstrap http://mirror.example.com/repo/path    \
+#
+# These options can also control the type of base system that is installed.  The
+# example below builds a Debian Wheezy system using packages from the main US FTP
+# Debian mirror.
+#
+# You could also modify the mirrors, mode, archive-areas, and distribution options to
+# build an Ubuntu-based image (e.g., http://archive.ubuntu.com/ubuntu, "ubuntu",
+# "main restricted universe", "precise"; respectively).
+#
+
+lb config noauto                                            \
+  --parent-mirror-bootstrap http://ftp.us.debian.org/debian \
+  --archive-areas "main contrib"                            \
+  --cache-packages true                                     \
+  --mode debian                                             \
+  --distribution wheezy                                     \
+  --binary-images net                                       \
+  --ignore-system-defaults                                  \
+  --apt-indices false                                       \
+  --initramfs-compression gzip                              \
+  --gzip-options "--best"                                   \
+  "${@}"
