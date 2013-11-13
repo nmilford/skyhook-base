@@ -25,7 +25,7 @@ Build Instructions
 $ make
 ```
 
-If successful, resultant images will be in _binary/live_ as **vmlinuz** (kernel), **initrd.img** (initramfs), and **filesystem.squashfs** (the root filesystem image).  Use `make config` to regenerate some configuration items.  User `make cleanall && make` to completely purge all generated files from a previous build and perform a fresh build (this includes removing the _binary/live_ directory, so be aware of that).
+If successful, resultant images will be in _binary/live_ as **vmlinuz** (kernel), **initrd.img** (initramfs), and **filesystem.squashfs** (the root filesystem image).  Use `make config` to regenerate some configuration items.  Use `make cleanall && make` to completely purge all generated files from a previous build and perform a fresh build (this includes removing the _binary/live_ directory, so be aware of that).
 
 
 Customization Shortcuts
