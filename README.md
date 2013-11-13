@@ -30,8 +30,8 @@ If successful, resultant images will be in _binary/live_ as **vmlinuz** (kernel)
 
 Customization Shortcuts
 -----------------------
-* See [auto/config] for adding custom and/or local package repositories.
-* See the file [config/hooks/example.chroot] for details on customizing the image.
+* See (auto/config) for adding custom and/or local package repositories.
+* See the file (config/hooks/example.chroot) for details on customizing the image.
 * See the [package lists](config/package-lists)
 
 See Also
