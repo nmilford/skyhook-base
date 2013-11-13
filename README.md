@@ -10,10 +10,9 @@ The Mark II image is a Debian based live system built and managed by the Debian 
 
 The image can be customized to suit your needs in accordance with the Debian live-build procedures.  Here is a quick overview of a few common tasks:
 
-* **Packages:** The packages that will be installed in the image are defined in _config/package-lists/*.list_
-* **Files:** Files can be inserted into the boot image by placing them into their full filesystem paths under _config/includes.chroot/_
-* **Hooks:** Custom scripts can be run both during the image build and boot process by placing them in _config/hooks/_ as _*.chroot_ (build) or _*.binary_ (boot).  For example; _config/hooks/cleanup.chroot_ would execute while the image is being built on your machine, whereas _config/hooks/ping.binary_ would execute when the image is booted.
-
+* **Packages:** The packages that will be installed in the image are defined in [config/package-lists/*.list](config/package-lists)
+* **Files:** Files can be inserted into the boot image by placing them into their full filesystem paths under [config/includes.chroot/]
+* **Hooks:** Custom scripts can be run both during the image build and boot process by placing them in [config/hooks/] as _*.chroot_ (build) or _*.binary_ (boot).  For example; _config/hooks/cleanup.chroot_ would execute while the image is being built on your machine, whereas _config/hooks/ping.binary_ would execute when the image is booted.
 
 
 Prerequisites
@@ -27,14 +26,14 @@ Build Instructions
 $ make
 ```
 
-If successful, resultant images will be in _binary/live_ as **vmlinuz** (kernel), **initrd.img** (initramfs), and **filesystem.squashfs** (the root filesystem image).
+If successful, resultant images will be in _binary/live_ as **vmlinuz** (kernel), **initrd.img** (initramfs), and **filesystem.squashfs** (the root filesystem image).  Use `make config` to regenerate some configuration items.  User `make cleanall && make` to completely purge all generated files from a previous build and perform a fresh build (this includes removing the _binary/live_ directory, so be aware of that).
 
 
 Customization Shortcuts
 -----------------------
-* See _auto/config_ for adding custom and/or local package repositories.
-* See the file _config/hooks/example.chroot_ for details on customizing the image.
-* See the [package lists](config/package-lists/README.md)
+* See [auto/config] for adding custom and/or local package repositories.
+* See the file [config/hooks/example.chroot] for details on customizing the image.
+* See the [package lists](config/package-lists)
 
 See Also
 --------
