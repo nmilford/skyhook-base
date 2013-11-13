@@ -1,7 +1,6 @@
 Skyhook Mark II
 ===============
-
-A network bootable Linux live environment for preparing machines for installation.
+An example Debian Live configuration for building network bootable Linux live environments
 
 
 Overview
