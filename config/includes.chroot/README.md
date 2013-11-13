@@ -2,7 +2,7 @@ chroot Includes
 ===============================================================================
 ### a.k.a. "This Gets Copied Into Root (/) During The Image Build Process"
 
-Put files, directories, money, jewels, private keys, and other valuable things that you would like to end up in the image's root filesystem here.  The contents of this directory (including this README) will be copied into the chroot environment of your image as it is being built.
+Put files, directories, money, jewels, private keys, and other valuable things that you would like to end up in the image's root filesystem here.  The contents of this directory (including this README) will be copied into the chroot environment of your image as it is being built.  As a result, these files will end up in the root filesystem of the final image that you boot from.
 
 
 #### Some Useful Things To Put In Here:
